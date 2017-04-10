@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<title>Deep Sea Diver</title>
+
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+    <link rel="stylesheet" href="assets/style/reset.css"/>
+	<link rel="stylesheet" href="assets/style/main.css"/>
+</head>
+<body class="home">
+    
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div id="container">
+        <img src="assets/img/rotate_device.jpg">
+        <div id="highscores"></div>
+        <form id="submit_highscore" method="POST">
+          <input type="text" name="name">
+          <input type="text" name="score" readonly>
+          <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <audio loop autoplay>
+      <source src="./assets/audio/life_instru.ogg" type="audio/ogg">
+      <source src="./assets/audio/life_instru.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="vendor/jquery-1.12.3.min.js"></script>
+    <script src="vendor/phaser.js"></script>
+    <!--<script src="vendor/phaser-debug.js"></script>!-->
+    <script src="main.js"></script>
+</body>
+</html>

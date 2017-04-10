@@ -1,0 +1,72 @@
+@font-face {
+	font-family: 'Silkscreen';
+	src: url('../fonts/silkscreen.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/silkscreen.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/silkscreen.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/silkscreen.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/silkscreen.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+body {
+	background: black;
+	overflow: hidden;
+}
+
+#container {
+	position: relative;
+}
+
+#container img {
+	position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  display: none;
+}
+
+#highscores {
+	display: none;
+	position: absolute; /* maybe not use this, research */
+	color: white;
+	font-size: 14pt;
+	font-family: 'Silkscreen';
+	min-width: 265px;
+}
+
+#highscores table {
+	width: 100%;
+}
+
+#highscores tr td:first-child {
+	padding-right: 10px;
+}
+
+#highscores tr td:last-child {
+	padding-left: 20px;
+	text-align: right;
+}
+
+#submit_highscore {
+	display: none;
+	position: absolute; /* change this later? */
+}
+
+#submit_highscore input {
+	border: 1px solid white;
+	background: none;
+	color: white;
+	font-family: 'Silkscreen';
+}
+
+#submit_highscore input:focus {
+  outline: none;
+}
+
+#submit_highscore input[name='name'] {
+	width: 120px;
+}
+
+#submit_highscore input[name='score'] {
+	width: 60px;
+	text-align: center;
+}
